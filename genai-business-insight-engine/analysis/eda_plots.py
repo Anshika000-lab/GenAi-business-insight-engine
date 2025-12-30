@@ -22,7 +22,6 @@ plt.title("Churn Rate by Plan")
 plt.ylabel("Churn Rate")
 plt.xlabel("Plan Type")
 plt.show()
-plt.savefig("analysis/churn_rate.png")
 
 # Revenue by plan
 revenue_by_plan = df.groupby("plan_type")["monthly_fee"].mean()
@@ -45,4 +44,6 @@ plt.title("Customer Signup Trend Over Time")
 plt.ylabel("Customers")
 plt.xlabel("Month")
 plt.show()
+plt.savefig("analysis/churn_rate.png")
+
 
